@@ -1,0 +1,16 @@
+name: simple workflow that prints hello world
+on:
+    push:
+        branches: ["main"]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: checkout the repo, to make sure we're working on the current files
+            uses: actions/checkout@v4
+
+        - name: print....
+            run: |
+            echo "Hello World!"
