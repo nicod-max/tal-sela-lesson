@@ -2,7 +2,7 @@ name: Run hello-world on specific timing
 
 on:
     schedule:
-        - cron: '8 11 * * *'  # Runs at 11:01 AM UTC (2:01 PM Israel time)
+        - cron: '16 * * * *'
 
 jobs:
     build:
