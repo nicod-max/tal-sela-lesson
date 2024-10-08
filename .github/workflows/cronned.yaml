@@ -1,0 +1,17 @@
+name: Run hello-world on specific timing
+
+on:
+    schedule:
+        - cron: "1 11 * * *"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: checkout the repo
+          uses: actions/checkout@v4
+        
+        - name: print the greeting
+            run: |
+            echo "hello"
