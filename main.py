@@ -1,3 +1,7 @@
+"""
+This module contains a simple function to demonstrate condition checking.
+"""
+
 def func():
     """Function to check if a equals 1 and print a message."""
     a = 1
