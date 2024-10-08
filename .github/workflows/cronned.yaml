@@ -2,16 +2,16 @@ name: Run hello-world on specific timing
 
 on:
     schedule:
-        - cron: "1 11 * * *"
+        - cron: '3 11 * * *'  # Runs at 11:01 AM UTC (2:01 PM Israel time)
 
 jobs:
     build:
         runs-on: ubuntu-latest
 
         steps:
-        - name: checkout the repo
+        - name: Checkout the repo
           uses: actions/checkout@v4
         
-        - name: print the greeting
-            run: |
+        - name: Print the greeting
+          run: |
             echo "hello"
